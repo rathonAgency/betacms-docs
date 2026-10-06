@@ -1,0 +1,49 @@
+---
+title: "Field types"
+description: "Choose field types to represent structured content in Betacms collections."
+---
+
+Collection fields describe the data stored on each item. Choose a type based on how the content will be entered and used.
+
+| Type | Use it for |
+| --- | --- |
+| `text` | Short text values such as titles or labels. |
+| `rich-text` | Formatted long-form content such as an article body. |
+| `date` | Dates such as publication or event dates. |
+| `url` | Links to web pages or resources. |
+| `image` | A single image. |
+| `gallery` | A group of images. |
+| `color` | A color value. |
+| `toggle` | A true-or-false setting. |
+| `number` | Numeric values. |
+| `option` | One selection from a configured list of options. |
+| `multi-option` | Multiple selections from a configured list of options. |
+| `reference` | A link to an item in another collection. |
+| `multi-reference` | Links to multiple items in another collection. |
+| `file` | A file value. |
+
+## Field settings
+
+Each field has a name and key, and can be marked as required. Fields can also have a description and a position within the collection. Option and multi-option fields can define options using an ID and label. Reference fields identify the collection they refer to.
+
+Fields are categorized as `system`, `built-in`, or `custom`. The category identifies the field's role in the collection.
+
+## Choose clear keys
+
+Use a stable, descriptive key for each field. Keys are used to identify values in the structured content, while the field name provides a human-readable label.
+
+## Example collection
+
+A blog collection could use these fields:
+
+| Name | Type | Required |
+| --- | --- | --- |
+| Title | `text` | Yes |
+| Slug | `text` | Yes |
+| Summary | `rich-text` | No |
+| Hero image | `image` | No |
+| Published at | `date` | No |
+| Category | `reference` | No |
+| Featured | `toggle` | No |
+
+A collection's items also have a built-in slug and draft/live status. Avoid adding duplicate fields for those values unless your workflow has a separate use for them.

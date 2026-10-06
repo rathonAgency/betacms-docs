@@ -1,0 +1,28 @@
+---
+title: "Project webhooks"
+description: "Associate webhook destinations and event subscriptions with a Betacms project."
+---
+
+A project webhook connects a project to a destination and can specify which event types to include. Use project webhooks to notify an external system about collection, field, and item changes.
+
+## Webhook properties
+
+A project webhook contains:
+
+- A **project ID** identifying the project.
+- A **destination ID** identifying the destination.
+- An optional **name** to help identify the webhook.
+- An optional list of subscribed **events**.
+- The **user ID** associated with the webhook.
+
+See [Webhook events](/integrate/webhooks/convex-events) for the supported event names.
+
+## Choose subscriptions
+
+Select the events that matter to the receiving system. Collection and field events are useful when synchronizing a content model. Item events are useful when responding to content updates or publishing changes.
+
+The event list is optional in the data model. Confirm the event-selection behavior in your Betacms workspace when configuring a destination.
+
+## Scope
+
+Webhooks belong to a project. Keep each destination associated with the project whose content the receiving system needs to process.

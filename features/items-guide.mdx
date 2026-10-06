@@ -1,0 +1,30 @@
+---
+title: "Items and publishing"
+description: "Create, order, and publish collection items in Betacms."
+---
+
+An item is one record in a collection. Its values are stored by field key, so each item follows the structure defined by that collection's fields.
+
+## Item properties
+
+Every item has:
+
+- A **slug** used to identify its URL. Betacms generates clean slugs for CMS items.
+- A **status** of `draft` or `live`.
+- An **order** value for ordering items within a collection.
+- Field **values**, stored as a key-value record.
+- An **updatedAt** timestamp and an owner.
+
+## Draft and live content
+
+Use `draft` for content that is still being written or reviewed. Set an item to `live` when it is ready to publish. Connect a collection to a dynamic page to use its content on your site; publishing updates can then flow through to the connected page.
+
+## Populate with AI
+
+AI can help populate a collection with structured content such as titles, descriptions, categories, dates, and other field values. Review generated content for accuracy and completeness before setting items live.
+
+## Plan item order
+
+Each item has an order value, and collections can be queried in order. Choose an order that reflects how the content should appear, such as newest first or a manually curated sequence.
+
+For the data structure that items follow, see [Collections](/features/collections-guide) and [Field types](/features/fields-guide).

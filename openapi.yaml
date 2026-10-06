@@ -1,0 +1,39 @@
+openapi: 3.1.0
+info:
+  title: Betacms API
+  version: 1.0.0
+  description: API for retrieving Betacms content resources.
+servers:
+  - url: https://api.example.com
+    description: Replace with your API base URL.
+paths:
+  /v1/collections:
+    get:
+      operationId: getCollections
+      summary: Get collections
+      responses:
+        "200":
+          description: Successful response.
+          content:
+            application/json:
+              schema: {}
+  /v1/items:
+    get:
+      operationId: getItems
+      summary: Get items
+      responses:
+        "200":
+          description: Successful response.
+          content:
+            application/json:
+              schema: {}
+  /v1/fields:
+    get:
+      operationId: getFields
+      summary: Get fields
+      responses:
+        "200":
+          description: Successful response.
+          content:
+            application/json:
+              schema: {}

@@ -1,0 +1,36 @@
+---
+title: "Webhook events"
+description: "Event types available for Betacms project webhooks."
+---
+
+Project webhooks can subscribe to collection, field, and item lifecycle events. Select the events your integration needs so it can respond when CMS content changes.
+
+## Collection events
+
+| Event | When it is emitted |
+| --- | --- |
+| `collection.created` | A collection is created. |
+| `collection.updated` | A collection is updated. |
+| `collection.deleted` | A collection is deleted. |
+
+## Field events
+
+| Event | When it is emitted |
+| --- | --- |
+| `field.created` | A collection field is created. |
+| `field.updated` | A collection field is updated. |
+| `field.deleted` | A collection field is deleted. |
+
+## Item events
+
+| Event | When it is emitted |
+| --- | --- |
+| `item.created` | A collection item is created. |
+| `item.updated` | A collection item is updated. |
+| `item.deleted` | A collection item is deleted. |
+
+## Choose events
+
+Subscribe only to events that your integration needs to process. For example, a publishing integration can listen for item changes, while a schema synchronization tool can listen for collection and field changes.
+
+Webhook event subscriptions are configured on a project webhook. See [Projects and webhooks](/integrate/webhooks/project-webhooks).
